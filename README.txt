@@ -40,36 +40,6 @@ STEP 3: Run the Script
 4. Press any key to exit when done
 
 ==========================================
-FOR OPEN NETWORKS (No Password):
-==========================================
-
-If your WiFi has no password, edit WifiProfile.xml:
-1. Change <authentication>WPA2PSK</authentication> to <authentication>open</authentication>
-2. Change <encryption>AES</encryption> to <encryption>none</encryption>
-3. Remove these lines completely:
-   <sharedKey>
-     <keyType>passPhrase</keyType>
-     <protected>false</protected>
-     <keyMaterial>YourPassword</keyMaterial>
-   </sharedKey>
-
-==========================================
-TROUBLESHOOTING:
-==========================================
-
-Problem: "Failed to import WiFi profile"
-Solution: Make sure WifiProfile.xml is in the same folder as ConnectWifi.bat
-
-Problem: "error" message appears
-Solution: 
-- Check that SSID name is exactly correct (case-sensitive)
-- Check that password is correct
-- Make sure WiFi is enabled on your computer
-
-Problem: Script won't run
-Solution: The script should auto-elevate, but if it doesn't work, right-click ConnectWifi.bat and select "Run as administrator"
-
-==========================================
 USING ON MULTIPLE LAPTOPS:
 ==========================================
 
@@ -79,16 +49,3 @@ USING ON MULTIPLE LAPTOPS:
    - Double-click ConnectWifi.bat
    - Done!
 
-==========================================
-FEATURES:
-==========================================
-
-- Simple and clean script (only 18 lines of code!)
-- SSID variable for easy configuration
-- Auto-elevates to Administrator privileges
-- Automatically imports WiFi profile
-- Connects to WiFi network
-- Works on all Windows versions
-- Perfect for USB distribution
-
-==========================================
