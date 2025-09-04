@@ -27,9 +27,9 @@ If your WiFi name is "MyHomeWiFi" and password is "mypassword123":
 STEP 2: Run the Script
 ----------------------
 1. Double-click ConnectWifi.bat
-2. If Windows asks for Administrator permission, click "Yes"
-3. The script will automatically connect to your WiFi
-4. You'll see success/error messages
+2. The script will automatically request Administrator privileges
+3. The script will import the WiFi profile and connect
+4. Press any key to exit when done
 
 ==========================================
 FOR OPEN NETWORKS (No Password):
@@ -52,14 +52,14 @@ TROUBLESHOOTING:
 Problem: "Failed to import WiFi profile"
 Solution: Make sure WifiProfile.xml is in the same folder as ConnectWifi.bat
 
-Problem: "Failed to connect to WiFi"
+Problem: "error" message appears
 Solution: 
 - Check that SSID name is exactly correct (case-sensitive)
 - Check that password is correct
 - Make sure WiFi is enabled on your computer
 
 Problem: Script won't run
-Solution: Right-click ConnectWifi.bat and select "Run as administrator"
+Solution: The script should auto-elevate, but if it doesn't work, right-click ConnectWifi.bat and select "Run as administrator"
 
 ==========================================
 USING ON MULTIPLE LAPTOPS:
@@ -68,7 +68,18 @@ USING ON MULTIPLE LAPTOPS:
 1. Copy both files (ConnectWifi.bat and WifiProfile.xml) to USB drive
 2. On each laptop:
    - Edit WifiProfile.xml with that laptop's WiFi details
-   - Run ConnectWifi.bat
+   - Double-click ConnectWifi.bat
    - Done!
+
+==========================================
+FEATURES:
+==========================================
+
+- Simple and clean script (only 16 lines of code!)
+- Auto-elevates to Administrator privileges
+- Automatically imports WiFi profile
+- Connects to WiFi network
+- Works on all Windows versions
+- Perfect for USB distribution
 
 ==========================================
