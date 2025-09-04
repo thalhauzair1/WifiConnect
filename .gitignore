@@ -1,0 +1,17 @@
+# Ignore temporary files
+*.tmp
+*.temp
+*.log
+
+# Ignore Windows specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Ignore any personal WiFi profiles
+*Personal*
+*Private*
+
+# Ignore backup files
+*.bak
+*.backup

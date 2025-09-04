@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!-- ========================================== -->
+<!-- WiFi Profile Configuration File -->
+<!-- ========================================== -->
+<!-- 
+INSTRUCTIONS:
+1. Change "YourSSID" to your actual WiFi network name (appears twice in this file)
+2. Change "YourPassword" to your actual WiFi password
+3. Save this file and run ConnectWifi.bat
+
+EXAMPLE:
+- If your WiFi name is "MyHomeWiFi" and password is "mypassword123"
+- Replace "YourSSID" with "MyHomeWiFi" (both places)
+- Replace "YourPassword" with "mypassword123"
+
+For OPEN networks (no password):
+- Change authentication to "open"
+- Change encryption to "none" 
+- Remove the sharedKey section entirely
+-->
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+  <name>YourSSID</name>
+  <SSIDConfig>
+    <SSID>
+      <name>YourSSID</name>
+    </SSID>
+  </SSIDConfig>
+  <connectionType>ESS</connectionType>
+  <connectionMode>auto</connectionMode>
+  <MSM>
+    <security>
+      <authEncryption>
+        <authentication>WPA2PSK</authentication>
+        <encryption>AES</encryption>
+        <useOneX>false</useOneX>
+      </authEncryption>
+      <sharedKey>
+        <keyType>passPhrase</keyType>
+        <protected>false</protected>
+        <keyMaterial>YourPassword</keyMaterial>
+      </sharedKey>
+    </security>
+  </MSM>
+</WLANProfile>
