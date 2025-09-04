@@ -11,7 +11,14 @@ QUICK START:
 STEP-BY-STEP INSTRUCTIONS:
 ==========================================
 
-STEP 1: Edit WifiProfile.xml
+STEP 1: Edit ConnectWifi.bat
+----------------------------
+1. Open ConnectWifi.bat in any text editor (Notepad, etc.)
+2. Find line 17: set SSID=YourSSID
+3. Change "YourSSID" to your WiFi network name
+4. Save the file
+
+STEP 2: Edit WifiProfile.xml
 ----------------------------
 1. Open WifiProfile.xml in any text editor (Notepad, etc.)
 2. Find "YourSSID" and replace it with your WiFi network name
@@ -21,10 +28,11 @@ STEP 1: Edit WifiProfile.xml
 
 EXAMPLE:
 If your WiFi name is "MyHomeWiFi" and password is "mypassword123":
-- Change "YourSSID" to "MyHomeWiFi" (both places)
-- Change "YourPassword" to "mypassword123"
+- In ConnectWifi.bat: set SSID=MyHomeWiFi
+- In WifiProfile.xml: Change "YourSSID" to "MyHomeWiFi" (both places)
+- In WifiProfile.xml: Change "YourPassword" to "mypassword123"
 
-STEP 2: Run the Script
+STEP 3: Run the Script
 ----------------------
 1. Double-click ConnectWifi.bat
 2. The script will automatically request Administrator privileges
@@ -75,7 +83,8 @@ USING ON MULTIPLE LAPTOPS:
 FEATURES:
 ==========================================
 
-- Simple and clean script (only 16 lines of code!)
+- Simple and clean script (only 18 lines of code!)
+- SSID variable for easy configuration
 - Auto-elevates to Administrator privileges
 - Automatically imports WiFi profile
 - Connects to WiFi network
